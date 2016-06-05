@@ -1,0 +1,27 @@
+Package: survutils
+Title: Different kinds of functions that can be applied on survival data for prediction
+Version: 1.0
+Date: 2016-05-19
+Author: person("Nivin", "Jacob", email = "fv3405@wayne.edu", role = c("aut", "cre"))
+Description: Different kinds of functions that can be applied on survival data for prediction
+Depends:
+    R (>= 3.1.3),
+    Coxnet,
+    pec,
+    survival,
+    randomForestSRC,
+    superpc,
+    MASS,
+    SparseM,
+    ggplot2,
+    Formula,
+    lattice,
+    Hmisc,
+    rms,
+    gbm,
+	  RegCox,
+    pseudo,
+	  MRCE,
+    glmnet
+License: GPL
+RoxygenNote: 5.0.1
