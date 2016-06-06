@@ -22,7 +22,7 @@ rsf <- function(filename, nfolds=5){
     data.fold.test <- data.train[which(foldid==n),]
     model.obj <- rfsrc(Surv(time, event) ~ ., data=data.fold.train, nsplit = 10, tree.err=FALSE)
     pred <- predict.rfsrc(model.obj, data.fold.test)
-    return(mean(pred$err.rate))
+    return(mean(pred$err.rate, na.rm=T))
     
   })
   
